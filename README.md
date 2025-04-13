@@ -1,6 +1,6 @@
 # Devsquare.EasyCQRS
 
-A lightweight CQRS (Command Query Responsibility Segregation) implementation for .NET 9 applications, built on Clean Architecture principles and using MediatR for command and query dispatching.
+A lightweight CQRS (Command Query Responsibility Segregation) implementation for .NET 9 applications for command and query dispatching.
 
 ## Features
 
