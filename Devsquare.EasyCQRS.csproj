@@ -1,9 +1,30 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    
+    <!-- Package information -->
+    <PackageId>Devsquare.CQRS</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Demaret Romain</Authors>
+    <Company>Devsquare</Company>
+    <Description>A lightweight CQRS implementation for .NET applications</Description>
+    <PackageTags>cqrs;dotnet;clean-architecture</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/devsquareSRL/Devsquare.EasyCQRS</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/devsquareSRL/Devsquare.EasyCQRS</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    
+    <!-- Generate XML documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+  </ItemGroup>
 
 </Project>
